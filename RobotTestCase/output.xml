@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231128 15:51:18.298" rpa="false" schemaversion="4">
+<suite id="s1" name="RobotTestCase" source="C:\Users\Wan Mai Ng\DevOps_Oct2023_TeamB_Prac2\RobotTestCase">
+<suite id="s1-s1" name="TPTestCase" source="C:\Users\Wan Mai Ng\DevOps_Oct2023_TeamB_Prac2\RobotTestCase\TPTestCase.robot">
+<test id="s1-s1-t1" name="Industry Partner" line="16">
+<kw name="Open TP Home Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${home_URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231128 15:51:18.513" level="INFO">Opening browser 'chrome' to base url 'https://www.tp.edu.sg/home.html'.</msg>
+<status status="PASS" starttime="20231128 15:51:18.513" endtime="20231128 15:51:25.684"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231128 15:51:25.684" endtime="20231128 15:51:25.801"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Home | Temasek Polytechnic</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20231128 15:51:25.812" level="INFO">Page title is 'Home | Temasek Polytechnic'.</msg>
+<status status="PASS" starttime="20231128 15:51:25.801" endtime="20231128 15:51:25.812"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${home_URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20231128 15:51:25.821" level="INFO">Current location is 'https://www.tp.edu.sg/home.html'.</msg>
+<status status="PASS" starttime="20231128 15:51:25.812" endtime="20231128 15:51:25.822"/>
+</kw>
+<status status="PASS" starttime="20231128 15:51:18.513" endtime="20231128 15:51:25.822"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath = //*[@id="navbarSupportedContent"]/div/ul/li[6]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231128 15:51:25.823" level="INFO">Clicking element 'xpath = //*[@id="navbarSupportedContent"]/div/ul/li[6]/a'.</msg>
+<status status="PASS" starttime="20231128 15:51:25.822" endtime="20231128 15:51:27.538"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath = /html/body/div[3]/div[1]/div/div[8]/div/div/div/div/div[2]/div/div/div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231128 15:51:27.539" level="INFO">Clicking element 'xpath = /html/body/div[3]/div[1]/div/div[8]/div/div/div/div/div[2]/div/div/div/a'.</msg>
+<status status="PASS" starttime="20231128 15:51:27.539" endtime="20231128 15:51:28.781"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath = /html/body/div[6]/div/div/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231128 15:51:28.784" level="INFO">Clicking element 'xpath = /html/body/div[6]/div/div/div'.</msg>
+<status status="PASS" starttime="20231128 15:51:28.782" endtime="20231128 15:51:28.861"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath = /html/body/div[3]/div[3]/div/div[2]/div/div[2]/div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231128 15:51:28.861" level="INFO">Clicking element 'xpath = /html/body/div[3]/div[3]/div/div[2]/div/div[2]/div/a'.</msg>
+<status status="PASS" starttime="20231128 15:51:28.861" endtime="20231128 15:51:34.080"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath = /html/body/div[3]/div[2]/div[1]/div/div[2]/a[3]/img</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231128 15:51:34.081" level="INFO">Clicking element 'xpath = /html/body/div[3]/div[2]/div[1]/div/div[2]/a[3]/img'.</msg>
+<status status="PASS" starttime="20231128 15:51:34.080" endtime="20231128 15:51:34.236"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231128 15:51:36.238" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231128 15:51:34.237" endtime="20231128 15:51:36.238"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath = /html/body/div[3]/div[2]/div[1]/div/div[2]/a[4]/img</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231128 15:51:36.238" level="INFO">Clicking element 'xpath = /html/body/div[3]/div[2]/div[1]/div/div[2]/a[4]/img'.</msg>
+<status status="PASS" starttime="20231128 15:51:36.238" endtime="20231128 15:51:36.361"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231128 15:51:38.361" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231128 15:51:36.361" endtime="20231128 15:51:38.361"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath = /html/body/div[3]/div[2]/div[1]/div/div[2]/a[1]/img</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231128 15:51:38.361" level="INFO">Clicking element 'xpath = /html/body/div[3]/div[2]/div[1]/div/div[2]/a[1]/img'.</msg>
+<status status="PASS" starttime="20231128 15:51:38.361" endtime="20231128 15:51:38.466"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath = //*[@id="shareIconsFirst"]/div/div[6]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231128 15:51:38.467" level="INFO">Clicking element 'xpath = //*[@id="shareIconsFirst"]/div/div[6]/a'.</msg>
+<status status="PASS" starttime="20231128 15:51:38.466" endtime="20231128 15:51:38.606"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231128 15:51:43.607" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231128 15:51:38.607" endtime="20231128 15:51:43.607"/>
+</kw>
+<doc>Test Case for navigating digital business transformation industry partners</doc>
+<status status="PASS" starttime="20231128 15:51:18.513" endtime="20231128 15:51:43.607"/>
+</test>
+<status status="PASS" starttime="20231128 15:51:18.321" endtime="20231128 15:51:43.607"/>
+</suite>
+<status status="PASS" starttime="20231128 15:51:18.298" endtime="20231128 15:51:43.607"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="RobotTestCase">RobotTestCase</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TPTestCase">RobotTestCase.TPTestCase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
