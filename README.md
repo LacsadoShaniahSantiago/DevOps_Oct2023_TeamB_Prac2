@@ -1,19 +1,27 @@
-# DevOps_Oct2023_TeamB_Prac2
+### DevOps_Oct2023_TeamB_Prac2
 
-## TP Home Website: (Robot Framework)
+#### TP Home Website: Test Cases (Robot Framework) 
 
-### Search for CCA Details
-### Skills Upgrading and Mastery categories detail
-#### - Lacsado Shaniah Santiago
+<p>
+  1. Search for CCA Details </br>
+  2. Skills Upgrading and Mastery categories detail </br>
+  - Lacsado Shaniah Santiago
+</p> 
 
-### Visit VR Campus Tour
-### Look for Fees and Financial Page
-#### - Koay Yi Ting
+<p>
+  3. Visit VR Campus Tour </br>
+  4. Look for Fees and Financial Page </br>
+  - Koay Yi Ting
+</p> 
 
-### Campus News
-### Industry Partners
-#### - Ng Zi Yi
+<p>
+  5. Campus News </br>
+  6. Industry Partners </br>
+  - Ng Zi Yi
+</p> 
 
-### Sign up
-### Look for Library
-#### - Luke Teran Murthi
+<p>
+  7. Sign up </br>
+  8. Look for Library </br>
+  - Luke Teran Murthi
+</p> 
