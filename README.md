@@ -21,7 +21,8 @@
 </p> 
 
 <p>
-  7. Sign up </br>
-  8. Look for Library </br>
+  7. Search for POLITE Games </br>
+  8. Calendar </br>
+  9. Alumni highlights </br>
   - Luke Teran Murthi
 </p> 
