@@ -30,6 +30,7 @@ Campus News
 
     Scroll Element Into View   xpath = //*[@id="search-content-release"]
     Click Element    xpath = //*[@id="search-content-release"]
+    Sleep    1s
     Input Text    xpath = //*[@id="search-content-release"]    game
     Press Keys    xpath = //*[@id="search-content-release"]    ENTER
     Sleep    2s
