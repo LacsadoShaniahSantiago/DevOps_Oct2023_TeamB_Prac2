@@ -11,6 +11,8 @@ ${pfp_brochure_URL}    https://www.tp.edu.sg/content/dam/tp-web/files/schools-n-
 ${courses}    Common ICT Programme 
 
 *** Keywords ***
+
+### Common Keywords
 Open TP Home Page
     Open Browser    ${home_URL}    chrome
     Maximize Browser Window
@@ -18,7 +20,7 @@ Open TP Home Page
     Location Should Be    ${home_URL}
     Click Element    class:cmp-t-and-c-cookie-close
 
-### Luke Teran Murthi
+### Luke Teran Murthi - Keywords
 Open TP PFP Page
     [Documentation]    To navigate to the PFP page and verify the title
     Wait Until Element Is Visible    xpath=/html/body/div[2]/div[2]/div/div[1]/ul/li[1]/div[1]
@@ -63,7 +65,7 @@ Test to search function
     Search CommonICT
     Close Browser
 
-# Koay Yi Ting
+### Koay Yi Ting
 Visit Fees and Financial
     Open TP Home Page
     #Navigate to Admission and Finance
@@ -127,4 +129,36 @@ Visit VR Campus Tour
         Click Element    id:${element_id}
     END
 
+    Close Browser
+
+### Ng Zi Yi
+Campus News
+    [Documentation]    Test Case for navigating and filtering TP campus news
+    Open TP Home Page
+    Click Element    xpath = /html/body/div[2]/div[2]/div/div[1]/ul/li[5]/div[1]
+    Click Element    xpath = /html/body/div[2]/div[2]/div/div[1]/ul/li[5]/div[2]/div/div[2]/a[3]
+    Click Element    xpath = //*[@id="release-list-filter"]/div[2]/div/div[6]/div[1]/div/a
+
+    # Loop through ict filters
+    ${ict_checkbox}    Create List    //*[@id="new-filter-6"]/div/label[2]/span    //*[@id="new-filter-6"]/div/label[3]/span    //*[@id="new-filter-6"]/div/label[4]/span    //*[@id="new-filter-6"]/div/label[5]/span    //*[@id="new-filter-6"]/div/label[6]/span    //*[@id="new-filter-6"]/div/label[7]/span    //*[@id="new-filter-6"]/div/label[8]/span
+    
+    FOR    ${filter}    IN    @{ict_checkbox}
+        Click Element    xpath=${filter}
+    END
+
+    Scroll Element Into View   xpath = //*[@id="search-content-release"]
+    Click Element    xpath = //*[@id="search-content-release"]
+    Sleep    1s
+    Input Text    xpath = //*[@id="search-content-release"]    game
+    Press Keys    xpath = //*[@id="search-content-release"]    ENTER
+    Sleep    2s
+    
+     # Wait for the element to be visible before clicking it
+    Wait Until Element Is Visible    xpath = /html/body/div[3]/div[1]/div/div[3]/div/div[2]/div/div[3]/div[2]/div[2]/a    timeout=10s
+    Click Element    xpath = /html/body/div[3]/div[1]/div/div[3]/div/div[2]/div/div[3]/div[2]/div[2]/a
+    Switch Window    new
+    Location Should Be    https://www.tp.edu.sg/about-tp/media-centre/campus-news/our-students-lee-wei-sheng-darren.html
+    Title Should Be    Our Students - Lee Wei Sheng Darren | Temasek Polytechnic
+
+    Sleep    5s
     Close Browser
