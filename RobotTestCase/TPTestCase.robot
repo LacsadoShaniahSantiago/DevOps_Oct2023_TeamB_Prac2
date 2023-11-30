@@ -20,7 +20,15 @@ Campus News
     Click Element    xpath = /html/body/div[2]/div[2]/div/div[1]/ul/li[5]/div[2]/div/div[2]/a[3]
     Click Element    xpath = /html/body/div[6]/div/div/div
     Click Element    xpath = //*[@id="release-list-filter"]/div[2]/div/div[6]/div[1]/div/a
-    Click Element    xpath = //*[@id="new-filter-6"]/div/label[1]/span
+
+    #loop through ict filters
+    ${ict_checkbox}    Create List    //*[@id="new-filter-6"]/div/label[2]/span    //*[@id="new-filter-6"]/div/label[3]/span    //*[@id="new-filter-6"]/div/label[4]/span    //*[@id="new-filter-6"]/div/label[5]/span    //*[@id="new-filter-6"]/div/label[6]/span    //*[@id="new-filter-6"]/div/label[7]/span    //*[@id="new-filter-6"]/div/label[8]/span
+    
+    FOR    ${filter}    IN    @{ict_checkbox}
+        Click Element    xpath=${filter}
+    END
+
+    Scroll Element Into View   xpath = //*[@id="search-content-release"]
     Click Element    xpath = //*[@id="search-content-release"]
     Input Text    xpath = //*[@id="search-content-release"]    game
     Press Keys    xpath = //*[@id="search-content-release"]    ENTER
