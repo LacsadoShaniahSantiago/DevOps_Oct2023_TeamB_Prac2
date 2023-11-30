@@ -21,6 +21,7 @@ ${ccaDetail_BTN}    class:btn tp--button
 
 @{cca_CAT}    Performing Arts CCAs    Sports CCAs    P10 Clubs & Interest Groups
 
+@{skills_NAV}    Emerging Domains    Our Services    Course Types    News & Events    Other Resources
 *** Keywords ***
 ### Common Keywords
 Open TP Home Page
@@ -67,6 +68,11 @@ Open Student Page
 Close CCA Details    
     Click Button    xpath://button[@class='close' and @data-dismiss='modal' and @aria-label='Close']
     Wait Until Element Is Not Visible    xpath://button[@class='close' and @data-dismiss='modal' and @aria-label='Close']
+
+Open Adult Learners Page
+    Click Link    Adult Learners
+    Title Should Be    Adult Learners | Temasek Polytechnic
+    Location Should Be    https://www.tp.edu.sg/landing/adult-learners.html
 
 *** Test Cases ***
 ### Luke Teran Murthi
@@ -234,3 +240,14 @@ CCA Details Are Accessible
         Click Element    xpath=//a[contains(text(), '${cat}')]
     END
     [Teardown]    Close Browser
+
+TP Skills Updgrading and Mastery Navigations
+    Open TP Home Page
+    Open Adult Learners Page
+    Scroll Element In To View    xpath=//img[@usemap='#image-map']
+    FOR    ${nav}    IN    @{skills_NAV}
+        Scroll Element In To View    xpath=//h3[contains(text(), 'Skills Upgrading and Mastery')]
+        ${element}=    Get WebElement    xpath=//map[@name='image-map']
+        Click Element    xpath=//area[@title='${nav}']
+    END
+    Close Browser
