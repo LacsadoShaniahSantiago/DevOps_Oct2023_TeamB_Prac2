@@ -1,106 +1,252 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231128 15:51:18.298" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231130 18:18:54.528" rpa="false" schemaversion="4">
 <suite id="s1" name="RobotTestCase" source="C:\Users\Wan Mai Ng\DevOps_Oct2023_TeamB_Prac2\RobotTestCase">
 <suite id="s1-s1" name="TPTestCase" source="C:\Users\Wan Mai Ng\DevOps_Oct2023_TeamB_Prac2\RobotTestCase\TPTestCase.robot">
-<test id="s1-s1-t1" name="Industry Partner" line="16">
+<test id="s1-s1-t1" name="Industry Partner" line="17">
 <kw name="Open TP Home Page">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${home_URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231128 15:51:18.513" level="INFO">Opening browser 'chrome' to base url 'https://www.tp.edu.sg/home.html'.</msg>
-<status status="PASS" starttime="20231128 15:51:18.513" endtime="20231128 15:51:25.684"/>
+<msg timestamp="20231130 18:18:54.728" level="INFO">Opening browser 'chrome' to base url 'https://www.tp.edu.sg/home.html'.</msg>
+<status status="PASS" starttime="20231130 18:18:54.728" endtime="20231130 18:19:00.376"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231128 15:51:25.684" endtime="20231128 15:51:25.801"/>
+<status status="PASS" starttime="20231130 18:19:00.376" endtime="20231130 18:19:00.492"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Home | Temasek Polytechnic</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20231128 15:51:25.812" level="INFO">Page title is 'Home | Temasek Polytechnic'.</msg>
-<status status="PASS" starttime="20231128 15:51:25.801" endtime="20231128 15:51:25.812"/>
+<msg timestamp="20231130 18:19:00.499" level="INFO">Page title is 'Home | Temasek Polytechnic'.</msg>
+<status status="PASS" starttime="20231130 18:19:00.492" endtime="20231130 18:19:00.499"/>
 </kw>
 <kw name="Location Should Be" library="SeleniumLibrary">
 <arg>${home_URL}</arg>
 <doc>Verifies that the current URL is exactly ``url``.</doc>
-<msg timestamp="20231128 15:51:25.821" level="INFO">Current location is 'https://www.tp.edu.sg/home.html'.</msg>
-<status status="PASS" starttime="20231128 15:51:25.812" endtime="20231128 15:51:25.822"/>
-</kw>
-<status status="PASS" starttime="20231128 15:51:18.513" endtime="20231128 15:51:25.822"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath = //*[@id="navbarSupportedContent"]/div/ul/li[6]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231128 15:51:25.823" level="INFO">Clicking element 'xpath = //*[@id="navbarSupportedContent"]/div/ul/li[6]/a'.</msg>
-<status status="PASS" starttime="20231128 15:51:25.822" endtime="20231128 15:51:27.538"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath = /html/body/div[3]/div[1]/div/div[8]/div/div/div/div/div[2]/div/div/div/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231128 15:51:27.539" level="INFO">Clicking element 'xpath = /html/body/div[3]/div[1]/div/div[8]/div/div/div/div/div[2]/div/div/div/a'.</msg>
-<status status="PASS" starttime="20231128 15:51:27.539" endtime="20231128 15:51:28.781"/>
+<msg timestamp="20231130 18:19:00.507" level="INFO">Current location is 'https://www.tp.edu.sg/home.html'.</msg>
+<status status="PASS" starttime="20231130 18:19:00.499" endtime="20231130 18:19:00.507"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath = /html/body/div[6]/div/div/div</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231128 15:51:28.784" level="INFO">Clicking element 'xpath = /html/body/div[6]/div/div/div'.</msg>
-<status status="PASS" starttime="20231128 15:51:28.782" endtime="20231128 15:51:28.861"/>
+<msg timestamp="20231130 18:19:00.508" level="INFO">Clicking element 'xpath = /html/body/div[6]/div/div/div'.</msg>
+<status status="PASS" starttime="20231130 18:19:00.507" endtime="20231130 18:19:00.574"/>
+</kw>
+<status status="PASS" starttime="20231130 18:18:54.728" endtime="20231130 18:19:00.574"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath = //*[@id="navbarSupportedContent"]/div/ul/li[6]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231130 18:19:00.575" level="INFO">Clicking element 'xpath = //*[@id="navbarSupportedContent"]/div/ul/li[6]/a'.</msg>
+<status status="PASS" starttime="20231130 18:19:00.574" endtime="20231130 18:19:02.242"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath = /html/body/div[3]/div[1]/div/div[7]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20231130 18:19:02.243" endtime="20231130 18:19:02.547"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>${focus_areas}</var>
+<arg>/html/body/div[3]/div[1]/div/div[7]/div/div/div[1]/div/div/div/a/div/div</arg>
+<arg>/html/body/div[3]/div[1]/div/div[7]/div/div/div[2]/div/div/div/a</arg>
+<arg>/html/body/div[3]/div[1]/div/div[7]/div/div/div[3]/div/div/div/a</arg>
+<arg>/html/body/div[3]/div[1]/div/div[7]/div/div/div[4]/div/div/div/a</arg>
+<arg>/html/body/div[3]/div[1]/div/div[8]/div/div/div/div/div[1]/div/div/div/a</arg>
+<arg>/html/body/div[3]/div[1]/div/div[8]/div/div/div/div/div[2]/div/div/div/a</arg>
+<arg>/html/body/div[3]/div[1]/div/div[8]/div/div/div/div/div[3]/div/div/div/a</arg>
+<arg>/html/body/div[3]/div[1]/div/div[8]/div/div/div/div/div[4]/div/div/div/a</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20231130 18:19:02.548" level="INFO">${focus_areas} = ['/html/body/div[3]/div[1]/div/div[7]/div/div/div[1]/div/div/div/a/div/div', '/html/body/div[3]/div[1]/div/div[7]/div/div/div[2]/div/div/div/a', '/html/body/div[3]/div[1]/div/div[7]/div/div/div[3]/div...</msg>
+<status status="PASS" starttime="20231130 18:19:02.548" endtime="20231130 18:19:02.548"/>
+</kw>
+<for flavor="IN">
+<var>${area}</var>
+<value>@{focus_areas}</value>
+<iter>
+<var name="${area}">/html/body/div[3]/div[1]/div/div[7]/div/div/div[1]/div/div/div/a/div/div</var>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath=${area}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20231130 18:19:02.549" level="INFO">Simulating Mouse Over on element 'xpath=/html/body/div[3]/div[1]/div/div[7]/div/div/div[1]/div/div/div/a/div/div'.</msg>
+<status status="PASS" starttime="20231130 18:19:02.549" endtime="20231130 18:19:02.875"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231130 18:19:04.875" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231130 18:19:02.875" endtime="20231130 18:19:04.875"/>
+</kw>
+<status status="PASS" starttime="20231130 18:19:02.549" endtime="20231130 18:19:04.875"/>
+</iter>
+<iter>
+<var name="${area}">/html/body/div[3]/div[1]/div/div[7]/div/div/div[2]/div/div/div/a</var>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath=${area}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20231130 18:19:04.876" level="INFO">Simulating Mouse Over on element 'xpath=/html/body/div[3]/div[1]/div/div[7]/div/div/div[2]/div/div/div/a'.</msg>
+<status status="PASS" starttime="20231130 18:19:04.875" endtime="20231130 18:19:05.169"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231130 18:19:07.169" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231130 18:19:05.169" endtime="20231130 18:19:07.169"/>
+</kw>
+<status status="PASS" starttime="20231130 18:19:04.875" endtime="20231130 18:19:07.169"/>
+</iter>
+<iter>
+<var name="${area}">/html/body/div[3]/div[1]/div/div[7]/div/div/div[3]/div/div/div/a</var>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath=${area}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20231130 18:19:07.170" level="INFO">Simulating Mouse Over on element 'xpath=/html/body/div[3]/div[1]/div/div[7]/div/div/div[3]/div/div/div/a'.</msg>
+<status status="PASS" starttime="20231130 18:19:07.169" endtime="20231130 18:19:07.472"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231130 18:19:09.473" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231130 18:19:07.472" endtime="20231130 18:19:09.473"/>
+</kw>
+<status status="PASS" starttime="20231130 18:19:07.169" endtime="20231130 18:19:09.473"/>
+</iter>
+<iter>
+<var name="${area}">/html/body/div[3]/div[1]/div/div[7]/div/div/div[4]/div/div/div/a</var>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath=${area}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20231130 18:19:09.474" level="INFO">Simulating Mouse Over on element 'xpath=/html/body/div[3]/div[1]/div/div[7]/div/div/div[4]/div/div/div/a'.</msg>
+<status status="PASS" starttime="20231130 18:19:09.473" endtime="20231130 18:19:09.761"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231130 18:19:11.762" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231130 18:19:09.761" endtime="20231130 18:19:11.762"/>
+</kw>
+<status status="PASS" starttime="20231130 18:19:09.473" endtime="20231130 18:19:11.762"/>
+</iter>
+<iter>
+<var name="${area}">/html/body/div[3]/div[1]/div/div[8]/div/div/div/div/div[1]/div/div/div/a</var>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath=${area}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20231130 18:19:11.763" level="INFO">Simulating Mouse Over on element 'xpath=/html/body/div[3]/div[1]/div/div[8]/div/div/div/div/div[1]/div/div/div/a'.</msg>
+<status status="PASS" starttime="20231130 18:19:11.762" endtime="20231130 18:19:12.060"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231130 18:19:14.061" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231130 18:19:12.060" endtime="20231130 18:19:14.061"/>
+</kw>
+<status status="PASS" starttime="20231130 18:19:11.762" endtime="20231130 18:19:14.061"/>
+</iter>
+<iter>
+<var name="${area}">/html/body/div[3]/div[1]/div/div[8]/div/div/div/div/div[2]/div/div/div/a</var>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath=${area}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20231130 18:19:14.062" level="INFO">Simulating Mouse Over on element 'xpath=/html/body/div[3]/div[1]/div/div[8]/div/div/div/div/div[2]/div/div/div/a'.</msg>
+<status status="PASS" starttime="20231130 18:19:14.061" endtime="20231130 18:19:14.361"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231130 18:19:16.364" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231130 18:19:14.361" endtime="20231130 18:19:16.364"/>
+</kw>
+<status status="PASS" starttime="20231130 18:19:14.061" endtime="20231130 18:19:16.364"/>
+</iter>
+<iter>
+<var name="${area}">/html/body/div[3]/div[1]/div/div[8]/div/div/div/div/div[3]/div/div/div/a</var>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath=${area}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20231130 18:19:16.364" level="INFO">Simulating Mouse Over on element 'xpath=/html/body/div[3]/div[1]/div/div[8]/div/div/div/div/div[3]/div/div/div/a'.</msg>
+<status status="PASS" starttime="20231130 18:19:16.364" endtime="20231130 18:19:16.655"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231130 18:19:18.656" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231130 18:19:16.655" endtime="20231130 18:19:18.656"/>
+</kw>
+<status status="PASS" starttime="20231130 18:19:16.364" endtime="20231130 18:19:18.656"/>
+</iter>
+<iter>
+<var name="${area}">/html/body/div[3]/div[1]/div/div[8]/div/div/div/div/div[4]/div/div/div/a</var>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath=${area}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20231130 18:19:18.657" level="INFO">Simulating Mouse Over on element 'xpath=/html/body/div[3]/div[1]/div/div[8]/div/div/div/div/div[4]/div/div/div/a'.</msg>
+<status status="PASS" starttime="20231130 18:19:18.656" endtime="20231130 18:19:18.948"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231130 18:19:20.948" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231130 18:19:18.948" endtime="20231130 18:19:20.948"/>
+</kw>
+<status status="PASS" starttime="20231130 18:19:18.656" endtime="20231130 18:19:20.948"/>
+</iter>
+<status status="PASS" starttime="20231130 18:19:02.548" endtime="20231130 18:19:20.948"/>
+</for>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath = /html/body/div[3]/div[1]/div/div[8]/div/div/div/div/div[2]/div/div/div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231130 18:19:20.948" level="INFO">Clicking element 'xpath = /html/body/div[3]/div[1]/div/div[8]/div/div/div/div/div[2]/div/div/div/a'.</msg>
+<status status="PASS" starttime="20231130 18:19:20.948" endtime="20231130 18:19:22.668"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath = /html/body/div[3]/div[3]/div/div[2]/div/div[2]/div/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231128 15:51:28.861" level="INFO">Clicking element 'xpath = /html/body/div[3]/div[3]/div/div[2]/div/div[2]/div/a'.</msg>
-<status status="PASS" starttime="20231128 15:51:28.861" endtime="20231128 15:51:34.080"/>
+<msg timestamp="20231130 18:19:22.668" level="INFO">Clicking element 'xpath = /html/body/div[3]/div[3]/div/div[2]/div/div[2]/div/a'.</msg>
+<status status="PASS" starttime="20231130 18:19:22.668" endtime="20231130 18:19:27.149"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath = /html/body/div[3]/div[2]/div[1]/div/div[2]/a[3]/img</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231128 15:51:34.081" level="INFO">Clicking element 'xpath = /html/body/div[3]/div[2]/div[1]/div/div[2]/a[3]/img'.</msg>
-<status status="PASS" starttime="20231128 15:51:34.080" endtime="20231128 15:51:34.236"/>
+<msg timestamp="20231130 18:19:27.150" level="INFO">Clicking element 'xpath = /html/body/div[3]/div[2]/div[1]/div/div[2]/a[3]/img'.</msg>
+<status status="PASS" starttime="20231130 18:19:27.150" endtime="20231130 18:19:27.341"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231128 15:51:36.238" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20231128 15:51:34.237" endtime="20231128 15:51:36.238"/>
+<msg timestamp="20231130 18:19:29.342" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231130 18:19:27.342" endtime="20231130 18:19:29.342"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath = /html/body/div[3]/div[2]/div[1]/div/div[2]/a[4]/img</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231128 15:51:36.238" level="INFO">Clicking element 'xpath = /html/body/div[3]/div[2]/div[1]/div/div[2]/a[4]/img'.</msg>
-<status status="PASS" starttime="20231128 15:51:36.238" endtime="20231128 15:51:36.361"/>
+<msg timestamp="20231130 18:19:29.343" level="INFO">Clicking element 'xpath = /html/body/div[3]/div[2]/div[1]/div/div[2]/a[4]/img'.</msg>
+<status status="PASS" starttime="20231130 18:19:29.343" endtime="20231130 18:19:29.460"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231128 15:51:38.361" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20231128 15:51:36.361" endtime="20231128 15:51:38.361"/>
+<msg timestamp="20231130 18:19:31.461" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231130 18:19:29.461" endtime="20231130 18:19:31.461"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath = /html/body/div[3]/div[2]/div[1]/div/div[2]/a[1]/img</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231128 15:51:38.361" level="INFO">Clicking element 'xpath = /html/body/div[3]/div[2]/div[1]/div/div[2]/a[1]/img'.</msg>
-<status status="PASS" starttime="20231128 15:51:38.361" endtime="20231128 15:51:38.466"/>
+<msg timestamp="20231130 18:19:31.463" level="INFO">Clicking element 'xpath = /html/body/div[3]/div[2]/div[1]/div/div[2]/a[1]/img'.</msg>
+<status status="PASS" starttime="20231130 18:19:31.461" endtime="20231130 18:19:31.547"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath = //*[@id="shareIconsFirst"]/div/div[6]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231128 15:51:38.467" level="INFO">Clicking element 'xpath = //*[@id="shareIconsFirst"]/div/div[6]/a'.</msg>
-<status status="PASS" starttime="20231128 15:51:38.466" endtime="20231128 15:51:38.606"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231128 15:51:43.607" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231128 15:51:38.607" endtime="20231128 15:51:43.607"/>
+<msg timestamp="20231130 18:19:31.548" level="INFO">Clicking element 'xpath = //*[@id="shareIconsFirst"]/div/div[6]/a'.</msg>
+<status status="PASS" starttime="20231130 18:19:31.548" endtime="20231130 18:19:31.676"/>
 </kw>
 <doc>Test Case for navigating digital business transformation industry partners</doc>
-<status status="PASS" starttime="20231128 15:51:18.513" endtime="20231128 15:51:43.607"/>
+<status status="PASS" starttime="20231130 18:18:54.727" endtime="20231130 18:19:31.677"/>
 </test>
-<status status="PASS" starttime="20231128 15:51:18.321" endtime="20231128 15:51:43.607"/>
+<status status="PASS" starttime="20231130 18:18:54.546" endtime="20231130 18:19:31.678"/>
 </suite>
-<status status="PASS" starttime="20231128 15:51:18.298" endtime="20231128 15:51:43.607"/>
+<status status="PASS" starttime="20231130 18:18:54.530" endtime="20231130 18:19:31.681"/>
 </suite>
 <statistics>
 <total>
