@@ -18,6 +18,8 @@ Open TP Home Page
     Location Should Be    ${home_URL}
     Click Element    class:cmp-t-and-c-cookie-close
 
+
+### Luke Teran Murthi
 Open TP PFP Page
     [Documentation]    To navigate to the PFP page and verify the title
     Wait Until Element Is Visible    xpath=/html/body/div[2]/div[2]/div/div[1]/ul/li[1]/div[1]
@@ -45,7 +47,9 @@ Search CommonICT
     Press Keys    None    ENTER
     Sleep    3
 
+
 *** Test Cases ***
+### Luke Teran Murthi
 Test for PFP brochure
     [Documentation]    This test case is for PFP Polytechnic Foundation Programme
     Open TP Home Page
