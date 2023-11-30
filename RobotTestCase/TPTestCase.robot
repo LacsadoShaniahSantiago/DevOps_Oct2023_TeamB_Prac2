@@ -13,6 +13,8 @@ Open TP Home Page
     Location Should Be    ${home_URL}
 
 *** Test Cases ***
+
+# Koay Yi Ting
 Visit Fees and Financial
     Open TP Home Page
     #Navigate to Admission and Finance
