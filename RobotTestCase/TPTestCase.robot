@@ -21,7 +21,7 @@ Campus News
     Click Element    xpath = /html/body/div[6]/div/div/div
     Click Element    xpath = //*[@id="release-list-filter"]/div[2]/div/div[6]/div[1]/div/a
 
-    #loop through ict filters
+    # Loop through ict filters
     ${ict_checkbox}    Create List    //*[@id="new-filter-6"]/div/label[2]/span    //*[@id="new-filter-6"]/div/label[3]/span    //*[@id="new-filter-6"]/div/label[4]/span    //*[@id="new-filter-6"]/div/label[5]/span    //*[@id="new-filter-6"]/div/label[6]/span    //*[@id="new-filter-6"]/div/label[7]/span    //*[@id="new-filter-6"]/div/label[8]/span
     
     FOR    ${filter}    IN    @{ict_checkbox}
@@ -37,6 +37,9 @@ Campus News
      # Wait for the element to be visible before clicking it
     Wait Until Element Is Visible    xpath = /html/body/div[3]/div[1]/div/div[3]/div/div[2]/div/div[3]/div[2]/div[2]/a    timeout=10s
     Click Element    xpath = /html/body/div[3]/div[1]/div/div[3]/div/div[2]/div/div[3]/div[2]/div[2]/a
+    Switch Window    new
+    Location Should Be    https://www.tp.edu.sg/about-tp/media-centre/campus-news/our-students-lee-wei-sheng-darren.html
+    Title Should Be    Our Students - Lee Wei Sheng Darren | Temasek Polytechnic
 
     Sleep    5s
     Close Browser

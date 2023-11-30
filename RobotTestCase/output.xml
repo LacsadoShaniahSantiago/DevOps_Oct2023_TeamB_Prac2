@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231130 17:30:47.353" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231130 17:40:04.113" rpa="false" schemaversion="4">
 <suite id="s1" name="RobotTestCase" source="C:\Users\Wan Mai Ng\DevOps_Oct2023_TeamB_Prac2\RobotTestCase">
 <suite id="s1-s1" name="TPTestCase" source="C:\Users\Wan Mai Ng\DevOps_Oct2023_TeamB_Prac2\RobotTestCase\TPTestCase.robot">
 <test id="s1-s1-t1" name="Campus News" line="16">
@@ -8,50 +8,50 @@
 <arg>${home_URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231130 17:30:47.607" level="INFO">Opening browser 'chrome' to base url 'https://www.tp.edu.sg/home.html'.</msg>
-<status status="PASS" starttime="20231130 17:30:47.607" endtime="20231130 17:31:00.890"/>
+<msg timestamp="20231130 17:40:04.365" level="INFO">Opening browser 'chrome' to base url 'https://www.tp.edu.sg/home.html'.</msg>
+<status status="PASS" starttime="20231130 17:40:04.363" endtime="20231130 17:40:10.030"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231130 17:31:00.890" endtime="20231130 17:31:01.016"/>
+<status status="PASS" starttime="20231130 17:40:10.030" endtime="20231130 17:40:10.153"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Home | Temasek Polytechnic</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20231130 17:31:01.024" level="INFO">Page title is 'Home | Temasek Polytechnic'.</msg>
-<status status="PASS" starttime="20231130 17:31:01.016" endtime="20231130 17:31:01.024"/>
+<msg timestamp="20231130 17:40:10.161" level="INFO">Page title is 'Home | Temasek Polytechnic'.</msg>
+<status status="PASS" starttime="20231130 17:40:10.153" endtime="20231130 17:40:10.161"/>
 </kw>
 <kw name="Location Should Be" library="SeleniumLibrary">
 <arg>${home_URL}</arg>
 <doc>Verifies that the current URL is exactly ``url``.</doc>
-<msg timestamp="20231130 17:31:01.030" level="INFO">Current location is 'https://www.tp.edu.sg/home.html'.</msg>
-<status status="PASS" starttime="20231130 17:31:01.024" endtime="20231130 17:31:01.030"/>
+<msg timestamp="20231130 17:40:10.169" level="INFO">Current location is 'https://www.tp.edu.sg/home.html'.</msg>
+<status status="PASS" starttime="20231130 17:40:10.161" endtime="20231130 17:40:10.169"/>
 </kw>
-<status status="PASS" starttime="20231130 17:30:47.607" endtime="20231130 17:31:01.031"/>
+<status status="PASS" starttime="20231130 17:40:04.361" endtime="20231130 17:40:10.169"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath = /html/body/div[2]/div[2]/div/div[1]/ul/li[5]/div[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231130 17:31:01.031" level="INFO">Clicking element 'xpath = /html/body/div[2]/div[2]/div/div[1]/ul/li[5]/div[1]'.</msg>
-<status status="PASS" starttime="20231130 17:31:01.031" endtime="20231130 17:31:01.110"/>
+<msg timestamp="20231130 17:40:10.170" level="INFO">Clicking element 'xpath = /html/body/div[2]/div[2]/div/div[1]/ul/li[5]/div[1]'.</msg>
+<status status="PASS" starttime="20231130 17:40:10.170" endtime="20231130 17:40:10.284"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath = /html/body/div[2]/div[2]/div/div[1]/ul/li[5]/div[2]/div/div[2]/a[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231130 17:31:01.111" level="INFO">Clicking element 'xpath = /html/body/div[2]/div[2]/div/div[1]/ul/li[5]/div[2]/div/div[2]/a[3]'.</msg>
-<status status="PASS" starttime="20231130 17:31:01.111" endtime="20231130 17:31:05.081"/>
+<msg timestamp="20231130 17:40:10.285" level="INFO">Clicking element 'xpath = /html/body/div[2]/div[2]/div/div[1]/ul/li[5]/div[2]/div/div[2]/a[3]'.</msg>
+<status status="PASS" starttime="20231130 17:40:10.284" endtime="20231130 17:40:12.069"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath = /html/body/div[6]/div/div/div</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231130 17:31:05.082" level="INFO">Clicking element 'xpath = /html/body/div[6]/div/div/div'.</msg>
-<status status="PASS" starttime="20231130 17:31:05.081" endtime="20231130 17:31:05.153"/>
+<msg timestamp="20231130 17:40:12.069" level="INFO">Clicking element 'xpath = /html/body/div[6]/div/div/div'.</msg>
+<status status="PASS" starttime="20231130 17:40:12.069" endtime="20231130 17:40:12.154"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath = //*[@id="release-list-filter"]/div[2]/div/div[6]/div[1]/div/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231130 17:31:05.155" level="INFO">Clicking element 'xpath = //*[@id="release-list-filter"]/div[2]/div/div[6]/div[1]/div/a'.</msg>
-<status status="PASS" starttime="20231130 17:31:05.154" endtime="20231130 17:31:05.251"/>
+<msg timestamp="20231130 17:40:12.155" level="INFO">Clicking element 'xpath = //*[@id="release-list-filter"]/div[2]/div/div[6]/div[1]/div/a'.</msg>
+<status status="PASS" starttime="20231130 17:40:12.155" endtime="20231130 17:40:12.258"/>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <var>${ict_checkbox}</var>
@@ -63,8 +63,8 @@
 <arg>//*[@id="new-filter-6"]/div/label[7]/span</arg>
 <arg>//*[@id="new-filter-6"]/div/label[8]/span</arg>
 <doc>Returns a list containing given items.</doc>
-<msg timestamp="20231130 17:31:05.251" level="INFO">${ict_checkbox} = ['//*[@id="new-filter-6"]/div/label[2]/span', '//*[@id="new-filter-6"]/div/label[3]/span', '//*[@id="new-filter-6"]/div/label[4]/span', '//*[@id="new-filter-6"]/div/label[5]/span', '//*[@id="new-filte...</msg>
-<status status="PASS" starttime="20231130 17:31:05.251" endtime="20231130 17:31:05.251"/>
+<msg timestamp="20231130 17:40:12.261" level="INFO">${ict_checkbox} = ['//*[@id="new-filter-6"]/div/label[2]/span', '//*[@id="new-filter-6"]/div/label[3]/span', '//*[@id="new-filter-6"]/div/label[4]/span', '//*[@id="new-filter-6"]/div/label[5]/span', '//*[@id="new-filte...</msg>
+<status status="PASS" starttime="20231130 17:40:12.260" endtime="20231130 17:40:12.261"/>
 </kw>
 <for flavor="IN">
 <var>${filter}</var>
@@ -74,134 +74,151 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=${filter}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231130 17:31:05.252" level="INFO">Clicking element 'xpath=//*[@id="new-filter-6"]/div/label[2]/span'.</msg>
-<status status="PASS" starttime="20231130 17:31:05.252" endtime="20231130 17:31:05.359"/>
+<msg timestamp="20231130 17:40:12.264" level="INFO">Clicking element 'xpath=//*[@id="new-filter-6"]/div/label[2]/span'.</msg>
+<status status="PASS" starttime="20231130 17:40:12.263" endtime="20231130 17:40:12.391"/>
 </kw>
-<status status="PASS" starttime="20231130 17:31:05.252" endtime="20231130 17:31:05.359"/>
+<status status="PASS" starttime="20231130 17:40:12.263" endtime="20231130 17:40:12.391"/>
 </iter>
 <iter>
 <var name="${filter}">//*[@id="new-filter-6"]/div/label[3]/span</var>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=${filter}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231130 17:31:05.360" level="INFO">Clicking element 'xpath=//*[@id="new-filter-6"]/div/label[3]/span'.</msg>
-<status status="PASS" starttime="20231130 17:31:05.360" endtime="20231130 17:31:05.513"/>
+<msg timestamp="20231130 17:40:12.392" level="INFO">Clicking element 'xpath=//*[@id="new-filter-6"]/div/label[3]/span'.</msg>
+<status status="PASS" starttime="20231130 17:40:12.392" endtime="20231130 17:40:12.544"/>
 </kw>
-<status status="PASS" starttime="20231130 17:31:05.360" endtime="20231130 17:31:05.513"/>
+<status status="PASS" starttime="20231130 17:40:12.391" endtime="20231130 17:40:12.544"/>
 </iter>
 <iter>
 <var name="${filter}">//*[@id="new-filter-6"]/div/label[4]/span</var>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=${filter}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231130 17:31:05.514" level="INFO">Clicking element 'xpath=//*[@id="new-filter-6"]/div/label[4]/span'.</msg>
-<status status="PASS" starttime="20231130 17:31:05.513" endtime="20231130 17:31:05.609"/>
+<msg timestamp="20231130 17:40:12.545" level="INFO">Clicking element 'xpath=//*[@id="new-filter-6"]/div/label[4]/span'.</msg>
+<status status="PASS" starttime="20231130 17:40:12.544" endtime="20231130 17:40:12.660"/>
 </kw>
-<status status="PASS" starttime="20231130 17:31:05.513" endtime="20231130 17:31:05.609"/>
+<status status="PASS" starttime="20231130 17:40:12.544" endtime="20231130 17:40:12.661"/>
 </iter>
 <iter>
 <var name="${filter}">//*[@id="new-filter-6"]/div/label[5]/span</var>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=${filter}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231130 17:31:05.610" level="INFO">Clicking element 'xpath=//*[@id="new-filter-6"]/div/label[5]/span'.</msg>
-<status status="PASS" starttime="20231130 17:31:05.609" endtime="20231130 17:31:05.675"/>
+<msg timestamp="20231130 17:40:12.662" level="INFO">Clicking element 'xpath=//*[@id="new-filter-6"]/div/label[5]/span'.</msg>
+<status status="PASS" starttime="20231130 17:40:12.661" endtime="20231130 17:40:12.751"/>
 </kw>
-<status status="PASS" starttime="20231130 17:31:05.609" endtime="20231130 17:31:05.675"/>
+<status status="PASS" starttime="20231130 17:40:12.661" endtime="20231130 17:40:12.751"/>
 </iter>
 <iter>
 <var name="${filter}">//*[@id="new-filter-6"]/div/label[6]/span</var>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=${filter}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231130 17:31:05.676" level="INFO">Clicking element 'xpath=//*[@id="new-filter-6"]/div/label[6]/span'.</msg>
-<status status="PASS" starttime="20231130 17:31:05.675" endtime="20231130 17:31:05.745"/>
+<msg timestamp="20231130 17:40:12.752" level="INFO">Clicking element 'xpath=//*[@id="new-filter-6"]/div/label[6]/span'.</msg>
+<status status="PASS" starttime="20231130 17:40:12.751" endtime="20231130 17:40:12.818"/>
 </kw>
-<status status="PASS" starttime="20231130 17:31:05.675" endtime="20231130 17:31:05.745"/>
+<status status="PASS" starttime="20231130 17:40:12.751" endtime="20231130 17:40:12.818"/>
 </iter>
 <iter>
 <var name="${filter}">//*[@id="new-filter-6"]/div/label[7]/span</var>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=${filter}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231130 17:31:05.746" level="INFO">Clicking element 'xpath=//*[@id="new-filter-6"]/div/label[7]/span'.</msg>
-<status status="PASS" starttime="20231130 17:31:05.746" endtime="20231130 17:31:05.808"/>
+<msg timestamp="20231130 17:40:12.821" level="INFO">Clicking element 'xpath=//*[@id="new-filter-6"]/div/label[7]/span'.</msg>
+<status status="PASS" starttime="20231130 17:40:12.819" endtime="20231130 17:40:12.878"/>
 </kw>
-<status status="PASS" starttime="20231130 17:31:05.746" endtime="20231130 17:31:05.808"/>
+<status status="PASS" starttime="20231130 17:40:12.819" endtime="20231130 17:40:12.879"/>
 </iter>
 <iter>
 <var name="${filter}">//*[@id="new-filter-6"]/div/label[8]/span</var>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=${filter}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231130 17:31:05.810" level="INFO">Clicking element 'xpath=//*[@id="new-filter-6"]/div/label[8]/span'.</msg>
-<status status="PASS" starttime="20231130 17:31:05.810" endtime="20231130 17:31:05.883"/>
+<msg timestamp="20231130 17:40:12.880" level="INFO">Clicking element 'xpath=//*[@id="new-filter-6"]/div/label[8]/span'.</msg>
+<status status="PASS" starttime="20231130 17:40:12.879" endtime="20231130 17:40:12.960"/>
 </kw>
-<status status="PASS" starttime="20231130 17:31:05.808" endtime="20231130 17:31:05.883"/>
+<status status="PASS" starttime="20231130 17:40:12.879" endtime="20231130 17:40:12.960"/>
 </iter>
-<status status="PASS" starttime="20231130 17:31:05.251" endtime="20231130 17:31:05.883"/>
+<status status="PASS" starttime="20231130 17:40:12.262" endtime="20231130 17:40:12.960"/>
 </for>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>xpath = //*[@id="search-content-release"]</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20231130 17:31:05.883" endtime="20231130 17:31:06.194"/>
+<status status="PASS" starttime="20231130 17:40:12.961" endtime="20231130 17:40:13.265"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath = //*[@id="search-content-release"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231130 17:31:06.196" level="INFO">Clicking element 'xpath = //*[@id="search-content-release"]'.</msg>
-<status status="PASS" starttime="20231130 17:31:06.194" endtime="20231130 17:31:06.271"/>
+<msg timestamp="20231130 17:40:13.266" level="INFO">Clicking element 'xpath = //*[@id="search-content-release"]'.</msg>
+<status status="PASS" starttime="20231130 17:40:13.265" endtime="20231130 17:40:13.353"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath = //*[@id="search-content-release"]</arg>
 <arg>game</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231130 17:31:06.272" level="INFO">Typing text 'game' into text field 'xpath = //*[@id="search-content-release"]'.</msg>
-<status status="PASS" starttime="20231130 17:31:06.271" endtime="20231130 17:31:06.359"/>
+<msg timestamp="20231130 17:40:13.354" level="INFO">Typing text 'game' into text field 'xpath = //*[@id="search-content-release"]'.</msg>
+<status status="PASS" starttime="20231130 17:40:13.353" endtime="20231130 17:40:13.477"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>xpath = //*[@id="search-content-release"]</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231130 17:31:06.361" level="INFO">Sending key(s) ('ENTER',) to xpath = //*[@id="search-content-release"] element.</msg>
-<msg timestamp="20231130 17:31:06.647" level="INFO">Pressing special key ENTER to element.</msg>
-<msg timestamp="20231130 17:31:06.647" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20231130 17:31:06.360" endtime="20231130 17:31:06.655"/>
+<msg timestamp="20231130 17:40:13.479" level="INFO">Sending key(s) ('ENTER',) to xpath = //*[@id="search-content-release"] element.</msg>
+<msg timestamp="20231130 17:40:13.760" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20231130 17:40:13.760" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20231130 17:40:13.478" endtime="20231130 17:40:13.775"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231130 17:31:08.657" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20231130 17:31:06.655" endtime="20231130 17:31:08.657"/>
+<msg timestamp="20231130 17:40:15.776" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231130 17:40:13.775" endtime="20231130 17:40:15.776"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath = /html/body/div[3]/div[1]/div/div[3]/div/div[2]/div/div[3]/div[2]/div[2]/a</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231130 17:31:08.657" endtime="20231130 17:31:08.687"/>
+<status status="PASS" starttime="20231130 17:40:15.777" endtime="20231130 17:40:15.806"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath = /html/body/div[3]/div[1]/div/div[3]/div/div[2]/div/div[3]/div[2]/div[2]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231130 17:31:08.688" level="INFO">Clicking element 'xpath = /html/body/div[3]/div[1]/div/div[3]/div/div[2]/div/div[3]/div[2]/div[2]/a'.</msg>
-<status status="PASS" starttime="20231130 17:31:08.688" endtime="20231130 17:31:09.017"/>
+<msg timestamp="20231130 17:40:15.807" level="INFO">Clicking element 'xpath = /html/body/div[3]/div[1]/div/div[3]/div/div[2]/div/div[3]/div[2]/div[2]/a'.</msg>
+<status status="PASS" starttime="20231130 17:40:15.807" endtime="20231130 17:40:15.902"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>new</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20231130 17:40:15.903" endtime="20231130 17:40:15.917"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://www.tp.edu.sg/about-tp/media-centre/campus-news/our-students-lee-wei-sheng-darren.html</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20231130 17:40:17.071" level="INFO">Current location is 'https://www.tp.edu.sg/about-tp/media-centre/campus-news/our-students-lee-wei-sheng-darren.html'.</msg>
+<status status="PASS" starttime="20231130 17:40:15.918" endtime="20231130 17:40:17.071"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Our Students - Lee Wei Sheng Darren | Temasek Polytechnic</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20231130 17:40:17.076" level="INFO">Page title is 'Our Students - Lee Wei Sheng Darren | Temasek Polytechnic'.</msg>
+<status status="PASS" starttime="20231130 17:40:17.071" endtime="20231130 17:40:17.076"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231130 17:31:14.017" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231130 17:31:09.017" endtime="20231130 17:31:14.017"/>
+<msg timestamp="20231130 17:40:22.077" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231130 17:40:17.077" endtime="20231130 17:40:22.077"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231130 17:31:14.020" endtime="20231130 17:31:16.217"/>
+<status status="PASS" starttime="20231130 17:40:22.078" endtime="20231130 17:40:24.321"/>
 </kw>
 <doc>Test Case for navigating and filtering TP campus news</doc>
-<status status="PASS" starttime="20231130 17:30:47.606" endtime="20231130 17:31:16.218"/>
+<status status="PASS" starttime="20231130 17:40:04.357" endtime="20231130 17:40:24.322"/>
 </test>
-<status status="PASS" starttime="20231130 17:30:47.373" endtime="20231130 17:31:16.222"/>
+<status status="PASS" starttime="20231130 17:40:04.135" endtime="20231130 17:40:24.325"/>
 </suite>
-<status status="PASS" starttime="20231130 17:30:47.354" endtime="20231130 17:31:16.224"/>
+<status status="PASS" starttime="20231130 17:40:04.115" endtime="20231130 17:40:24.328"/>
 </suite>
 <statistics>
 <total>
