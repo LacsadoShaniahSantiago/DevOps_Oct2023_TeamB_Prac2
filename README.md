@@ -21,8 +21,7 @@
 </p> 
 
 <p>
-  7. Search for POLITE Games </br>
-  8. Calendar </br>
-  9. Alumni highlights </br>
+  7. PFP </br>
+  8. CommonICT </br>
   - Luke Teran Murthi
 </p> 
