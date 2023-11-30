@@ -11,6 +11,7 @@ Open TP Home Page
     Maximize Browser Window
     Title Should Be   Home | Temasek Polytechnic
     Location Should Be    ${home_URL}
+    Click Element    class:cmp-t-and-c-cookie-close
 
 *** Test Cases ***
 
@@ -27,8 +28,6 @@ Visit Fees and Financial
     # Verify Website
     Title Should be    Fees & Financial Matters | Temasek Polytechnic
     Location Should be    https://www.tp.edu.sg/admissions-and-finance/fees-financial-matters.html
-
-    Click Element    class:cmp-t-and-c-cookie-close
 
     # Click the all the dropdown buttons
     ${elements}=    Get WebElements    css:button.cmp-accordion__button
